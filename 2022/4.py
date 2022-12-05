@@ -24,7 +24,6 @@ def part1(lines):
 			if max1 <= max2:
 				total += 1
 	print("Part 1: ", total)
-##Part 2 Start
 	
 def part2(lines):
 	total = 0;
