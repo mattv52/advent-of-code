@@ -6,15 +6,20 @@ read DAY
 curl "https://adventofcode.com/$YEAR/day/$DAY/input" -H 'Cookie: session=53616c7465645f5f22ea9ecc09eb0974dca58bd2b5f1e1a2c481d8f7cffff8bc14d4dc07dbac736cd1ec465da6ac8d0ef6b4348d1081a9208bca27c178ea3226'> input/${DAY}.txt
 echo "with open('input/${DAY}.txt') as f:
     lines = f.readlines()
+for i in range(len(lines)):
+	if lines[i][-1] == '\n';
+		lines[i] = lines[i][:-1]
 
 def part1(lines):
 
+	ans = ''
 	print('Part 1:', ans)
 
 
 def part2(lines):
 
+	ans = ''
 	print('Part 2:', ans)
 
-#part1(lines)
+part1(lines)
 #part2(lines)" > $DAY.py
