@@ -7,7 +7,7 @@ curl "https://adventofcode.com/$YEAR/day/$DAY/input" -H 'Cookie: session=53616c7
 echo "with open('input/${DAY}.txt') as f:
     lines = f.readlines()
 for i in range(len(lines)):
-	if lines[i][-1] == '\n';
+	if lines[i][-1] == '\n':
 		lines[i] = lines[i][:-1]
 
 def part1(lines):
